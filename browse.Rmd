@@ -1,0 +1,23 @@
+---
+title: ''
+---
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body {
+text-align: justify}
+.main-container {
+  max-width: 1850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<div align="center">
+  <iframe width='1850px' height='1000px' frameBorder='0' src='https://vitiligo-cellxgene.dolphinnext.com'>
+    <p>Your browser does not support iframes</p>
+  </iframe>
+</div>

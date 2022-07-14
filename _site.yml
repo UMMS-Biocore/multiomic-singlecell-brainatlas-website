@@ -1,0 +1,44 @@
+name: "Vitiligo"                              # CHANGE HERE 
+output_dir: "."
+navbar:
+  title: "Vitiligo"                             # CHANGE HERE 
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Browser"
+      icon: fa-project-diagram 
+      href: browse.html
+    - text: "SignallingSingleCell"
+      icon: fa-laptop 
+      href: signallingsinglecell.html
+    - text: "DolphinSuite"
+      icon: fa-database
+      href: dolphinnext.html
+  right:
+    - text: "Contact"
+      icon: fa-envelope-o
+      menu:
+      - text: "Garber Lab"
+        href: https://www.umassmed.edu/garberlab/
+      - text: "Harris Lab: Vitiligo Clinic & Research Center"
+        href: https://www.umassmed.edu/vitiligo/about/
+      - text: "UMass Chan Med. Bioinformatics Core"
+        href: https://www.umassmed.edu/biocore/
+    - text: "GitHub"
+      icon: fa-github
+      menu:
+      - text: "SignallingSingleCell"
+        href: https://github.com/garber-lab/SignallingSingleCell    
+        target: "_blank"
+      - text: "DolphinNext"
+        href: https://github.com/UMMS-Biocore/dolphinnext
+      - text: "DolphinMeta"
+        href: https://github.com/UMMS-Biocore/dmeta 
+      - text: "DolphinPortal"
+        href: https://github.com/UMMS-Biocore/dportal
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
