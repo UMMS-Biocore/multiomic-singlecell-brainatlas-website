@@ -339,7 +339,7 @@ table, th, td {
 body {
 text-align: justify}
 </style>
-<p>All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager <a href="./dolphinnext.html">DolphinNext</a> (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x">Yukselen et. al 2020</a>). The metadata as well as the processed datasets are currently being hosted in <a href="./dolphinnext.html">DolphinSuite</a>, an end-to-end bioinformatics analysis platform.</p>
+<p>All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager <a href="./dolphinsuite.html">DolphinNext</a> (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x">Yukselen et. al 2020</a>). The metadata as well as the processed datasets are currently being hosted in <a href="./dolphinsuite.html">DolphinSuite</a>, an end-to-end bioinformatics analysis platform.</p>
 <div id="dolphinsuite-platforms" class="section level2">
 <h2>DolphinSuite Platforms</h2>
 <p><a href="https://www.umassmed.edu/biocore/" target="_blank">UMass Chan Medical School BioCore</a> has developed <strong>DolphinSuite</strong>, a bioinformatics platform to support the analysis of high throughput data. DolphinSuite tracks samples from sample collection to data processing (sequencing, proteomics, metabolomics) and provides interactive analysis using an intuitive web interface. DolphinSuite is built to ensure secure access to the processed data using 3rd party applications for tailor-made analysis and data sharing.</p>
@@ -412,6 +412,13 @@ STAR is used to align RNA-Seq reads to a genome.
 SummarizeOverlaps is used to calculate gene counts.
 </li>
 </ol>
+<p style="margin : 0; padding-top:0;">
+<strong>Docker</strong>: <a href="https://hub.docker.com/r/dolphinnext/tasic2018_scrnaseq_pipeline" target="_blank">https://hub.docker.com/r/dolphinnext/tasic2018_scrnaseq_pipeline</a>
+</p>
+<p>
+<strong>GitHub</strong>: <a href="https://github.com/dolphinnext/tasic2018_scrnaseq_pipeline" target="_blank">https://github.com/dolphinnext/tasic2018_scrnaseq_pipeline</a>
+</li>
+</p>
 </td>
 </tr>
 <tr>
@@ -439,6 +446,13 @@ Trimmed and untrimmed reads are aligned to the reference using Bowtie.
 Duplicates reads are deleted using Samtools.
 </li>
 </ol>
+<p style="margin : 0; padding-top:0;">
+<strong>Docker</strong>: <a href="https://hub.docker.com/r/dolphinnext/graybuck2019_scatacseq_pipeline " target="_blank">https://hub.docker.com/r/dolphinnext/graybuck2019_scatacseq_pipeline </a>
+</p>
+<p>
+<strong>GitHub</strong>: <a href="https://github.com/dolphinnext/graybuck2019_scatacseq_pipeline " target="_blank">https://github.com/dolphinnext/graybuck2019_scatacseq_pipeline </a>
+</li>
+</p>
 </td>
 </tr>
 <tr>
@@ -466,6 +480,13 @@ STAR is used to align RNA-Seq reads to a genome.
 MACS2 is used for calling peaks in aligned bam files.
 </li>
 </ol>
+<p style="margin : 0; padding-top:0;">
+<strong>Docker</strong>: <a href="https://hub.docker.com/r/dolphinnext/cageseq_pipeline" target="_blank">https://hub.docker.com/r/dolphinnext/cageseq_pipeline</a>
+</p>
+<p>
+<strong>GitHub</strong>: <a href="https://github.com/dolphinnext/cageseq_pipeline" target="_blank">https://github.com/dolphinnext/cageseq_pipeline</a>
+</li>
+</p>
 </td>
 </tr>
 </tbody>

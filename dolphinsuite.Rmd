@@ -68,6 +68,8 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
          <li>STAR is used to align RNA-Seq reads to a genome.</li>
          <li>SummarizeOverlaps is used to calculate gene counts.</li>
       </ol>
+      <p style="margin : 0; padding-top:0;">**Docker**: <a href="https://hub.docker.com/r/dolphinnext/tasic2018_scrnaseq_pipeline" target="_blank">https://hub.docker.com/r/dolphinnext/tasic2018_scrnaseq_pipeline</a></p>
+      <p>**GitHub**: <a href="https://github.com/dolphinnext/tasic2018_scrnaseq_pipeline" target="_blank">https://github.com/dolphinnext/tasic2018_scrnaseq_pipeline</a> </li></p>
    </td>
   </tr>
   <tr>
@@ -84,6 +86,8 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
          <li>Trimmed and untrimmed reads are aligned to the reference using Bowtie.</li>
          <li>Duplicates reads are deleted using Samtools.</li>
       </ol>
+      <p style="margin : 0; padding-top:0;">**Docker**: <a href="https://hub.docker.com/r/dolphinnext/graybuck2019_scatacseq_pipeline " target="_blank">https://hub.docker.com/r/dolphinnext/graybuck2019_scatacseq_pipeline </a></p>
+      <p>**GitHub**: <a href="https://github.com/dolphinnext/graybuck2019_scatacseq_pipeline " target="_blank">https://github.com/dolphinnext/graybuck2019_scatacseq_pipeline </a> </li></p>
    </td>
   </tr>
   <tr>
@@ -100,6 +104,8 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
          <li>STAR is used to align RNA-Seq reads to a genome.</li>
          <li>MACS2 is used for calling peaks in aligned bam files.</li>
       </ol>
+      <p style="margin : 0; padding-top:0;">**Docker**: <a href="https://hub.docker.com/r/dolphinnext/cageseq_pipeline" target="_blank">https://hub.docker.com/r/dolphinnext/cageseq_pipeline</a></p>
+      <p>**GitHub**: <a href="https://github.com/dolphinnext/cageseq_pipeline" target="_blank">https://github.com/dolphinnext/cageseq_pipeline</a> </li></p>
    </td>
   </tr>
 </tbody>
