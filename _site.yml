@@ -15,7 +15,7 @@ navbar:
       href: cellxgenebrowse.html
     - text: "DolphinSuite"
       icon: fa-laptop
-      href: dolphinnext.html
+      href: dolphinsuite.html
   right:
     - text: "Contact"
       icon: fa-envelope-o

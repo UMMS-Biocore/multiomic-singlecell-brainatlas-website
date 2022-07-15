@@ -11,7 +11,7 @@ body {
 text-align: justify}
 </style>
 
-All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager [DolphinNext](./dolphinnext.html) ([Yukselen et. al 2020](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x)). The metadata as well as the processed datasets are currently being hosted in [DolphinSuite](./dolphinnext.html), an end-to-end bioinformatics analysis platform.
+All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager [DolphinNext](./dolphinsuite.html) ([Yukselen et. al 2020](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x)). The metadata as well as the processed datasets are currently being hosted in [DolphinSuite](./dolphinsuite.html), an end-to-end bioinformatics analysis platform.
 
 ## DolphinSuite Platforms
 
