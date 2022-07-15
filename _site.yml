@@ -1,37 +1,34 @@
-name: "Vitiligo"                              # CHANGE HERE 
+name: "scBrainAtlas"                              # CHANGE HERE 
 output_dir: "."
 navbar:
-  title: "Vitiligo"                             # CHANGE HERE 
+  title: "scBrainAtlas"                             # CHANGE HERE 
   type: inverse
   left:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "Browser"
+    - text: "UCSC Track Hub"
+      icon: fa-dna
+      href: ucscbrowse.html
+    - text: "Cellxgene Browser"
       icon: fa-project-diagram 
-      href: browse.html
-    - text: "SignallingSingleCell"
-      icon: fa-laptop 
-      href: signallingsinglecell.html
+      href: cellxgenebrowse.html
     - text: "DolphinSuite"
-      icon: fa-database
+      icon: fa-laptop
       href: dolphinnext.html
   right:
     - text: "Contact"
       icon: fa-envelope-o
       menu:
-      - text: "Garber Lab"
-        href: https://www.umassmed.edu/garberlab/
-      - text: "Harris Lab: Vitiligo Clinic & Research Center"
-        href: https://www.umassmed.edu/vitiligo/about/
+      - text: "Esteves Lab"
+        href: https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/
       - text: "UMass Chan Med. Bioinformatics Core"
         href: https://www.umassmed.edu/biocore/
+      - text: "Allen Institute for Brain Science"
+        href: https://alleninstitute.org/
     - text: "GitHub"
       icon: fa-github
       menu:
-      - text: "SignallingSingleCell"
-        href: https://github.com/garber-lab/SignallingSingleCell    
-        target: "_blank"
       - text: "DolphinNext"
         href: https://github.com/UMMS-Biocore/dolphinnext
       - text: "DolphinMeta"

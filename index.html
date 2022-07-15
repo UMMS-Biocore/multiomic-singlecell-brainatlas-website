@@ -11,9 +11,9 @@
 
 
 
-<title>scRNA-seq of human vitiligo reveals complex networks of subclinical immune activation and a role for CCR5 in Treg function</title>
+<title>A Multi-Omic Single Cell Brain Atlas of Mouse Neocortex</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,6 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -62,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -234,12 +240,12 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Vitiligo</a>
+      <a class="navbar-brand" href="index.html">scBrainAtlas</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -251,22 +257,22 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="browse.html">
-    <span class="fa fa-project-diagram"></span>
+  <a href="ucscbrowse.html">
+    <span class="fa fa-dna"></span>
      
-    Browser
+    UCSC Track Hub
   </a>
 </li>
 <li>
-  <a href="signallingsinglecell.html">
-    <span class="fa fa-laptop"></span>
+  <a href="cellxgenebrowse.html">
+    <span class="fa fa-project-diagram"></span>
      
-    SignallingSingleCell
+    Cellxgene Browser
   </a>
 </li>
 <li>
   <a href="dolphinnext.html">
-    <span class="fa fa-database"></span>
+    <span class="fa fa-laptop"></span>
      
     DolphinSuite
   </a>
@@ -274,7 +280,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-envelope-o"></span>
      
     Contact
@@ -283,18 +289,18 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://www.umassmed.edu/garberlab/">Garber Lab</a>
-    </li>
-    <li>
-      <a href="https://www.umassmed.edu/vitiligo/about/">Harris Lab: Vitiligo Clinic &amp; Research Center</a>
+      <a href="https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/">Esteves Lab</a>
     </li>
     <li>
       <a href="https://www.umassmed.edu/biocore/">UMass Chan Med. Bioinformatics Core</a>
     </li>
+    <li>
+      <a href="https://alleninstitute.org/">Allen Institute for Brain Science</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-github"></span>
      
     GitHub
@@ -302,9 +308,6 @@ $(document).ready(function () {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://github.com/garber-lab/SignallingSingleCell">SignallingSingleCell</a>
-    </li>
     <li>
       <a href="https://github.com/UMMS-Biocore/dolphinnext">DolphinNext</a>
     </li>
@@ -325,7 +328,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">scRNA-seq of human vitiligo reveals complex networks of subclinical immune activation and a role for CCR5 in Treg function</h1>
+<h1 class="title toc-ignore">A Multi-Omic Single Cell Brain Atlas of Mouse Neocortex</h1>
 
 </div>
 
@@ -339,22 +342,26 @@ text-align: justify}
   margin-right: auto;
 }
 </style>
-<p>This site provides access to the data we used in our recent publication (<a href="https://www.science.org/doi/10.1126/scitranslmed.abd8995">Gellatly et. al 2021</a>) where we sought to identify cellular communications that show disruption in lesions or in non-lesional skins of individuals suffering from Vitiligo, an autoimmune skin disease characterized by the targeted destruction of melanocytes by T cells.</p>
-<p>The data provided was obtained using our in-house <a href="https://dx.doi.org/10.1016%2Fj.cell.2015.04.044">inDrop system</a> to generate single cell RNA-Seq profiles on affected and unaffected skin from vitiligo patients, as well as healthy controls. The data was analyzed using our end-to-end scRNA data analysis package called <a href="./signallingsinglecell.html">SignallingSingleCell</a>.</p>
-<p>To provide access to the processed data we are hosting an interactive browser based on <a href="./browse.html">Cellxgene</a> Browser.</p>
-<p>All raw sequencing data was processed by the scRNA-Seq inDrop pipeline developed within the interactive pipeline manager <a href="./dolphinnext.html">DolphinNext</a> (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x">Yukselen et. al 2020</a>), and currently being hosted in DolphinSuite high throughput data analysis platform.</p>
-<div id="raw-data" class="section level5">
-<h5><strong>Raw Data:</strong></h5>
-<p>The raw .fastq files have been deposited through dbGAP. These files are protected, and you will need an account and to request access to download the files. As of 10/5/21 the data files are processing on the dbGAP server.</p>
-<p><a href="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002455.v1.p1" class="uri">https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002455.v1.p1</a></p>
+<p><br /></p>
+<p>We provide access to processed and analyzed data of mouse single cell, primary cell and whole tissue originating from large studies (<strong>scRNA-Seq</strong> and <strong>scATAC-Seq</strong>) conducted in <strong>Allen Institute for Brain Science</strong> as well as additional projects such as <strong>FANTOM5</strong> for <strong>CAGE-Seq</strong>. This project has been conducted in collaboration with <a href="https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/">Sena-Esteves Lab</a> and <a href="https://www.umassmed.edu/biocore/">Bioinformatics Core</a> at UMass Chan Medical School.</p>
+<p>In collaboration with <a href="https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/">Sena-Esteves Lab</a> and <a href="https://www.umassmed.edu/biocore/">Bioinformatics Core</a> at UMass Chan Medical School, this website hosts two publicly accessible browsers for interactively visualizing genomic tracks and profiles of mouse brain cells.</p>
+<p><strong>UCSC Track Hub:</strong> The scRNA-Seq, scATAC-Seq and CAGE-Seq reads are individually aligned using predefined pre-processing pipelines. Aligned reads are aggregated for cell types, tissues and regions of interests before transformed into BigWig files. To provide access to these aggregate single cell tracks we are hosting a custom <a href="./cellxgenebrowse.html">UCSC Track Hub</a>.</p>
+<p><strong>Cellxgene Browser:</strong> The scRNA data on mouse neocortex is analyzed using scRNA downstream analysis package called <a href="https://satijalab.org/seurat/">Seurat</a>. To provide access to the analyzed single cell data we are hosting an interactive browser based on <a href="./cellxgenebrowse.html">Cellxgene</a>.</p>
+<p>All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager <a href="./dolphinnext.html">DolphinNext</a> (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x">Yukselen et. al 2020</a>). Metadata as well as the processed datasets are currently being hosted in <a href="./dolphinnext.html">DolphinSuite</a>, an end-to-end bioinformatics analysis platform.</p>
+<p><img width="100%" height="100%" src="images/index.png" class="center"></p>
+<div id="scrna-seq-tasic-et.-al-2021" class="section level5">
+<h5><strong>scRNA-Seq (Tasic et. al 2021):</strong></h5>
+<p>This study includes gene expression profiles of 3602 mouse neocortex single cells (<a href="https://www.nature.com/articles/s41586-018-0654-5">Tasic et. al 2021</a>) that are collected from either anterior lateral motor cortex (<strong>ALM</strong>) or primary visual cortex (<strong>VISp</strong>) of 360 mice donors whose ages are ranging between 51 and 91 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq.</p>
+<p>The paired sequencing reads of each individual cell are processed using the <strong>scRNA-Seq (Tasic et al 2021)</strong> pipeline that aligns and quantifies reads as previously described by (<a href="https://www.nature.com/articles/s41586-018-0654-5">Tasic et. al 2021</a>).</p>
 </div>
-<div id="umi-tables" class="section level5">
-<h5><strong>UMI Tables:</strong></h5>
-<p>For convenience we are providing 3 processed data tables here. One is a raw sparse matrix, that is the output of our processing pipeline with no further manipulation. We are also providing a fully processed UMI table that has been filtered, dimension reduced, clustered, and normalized. The processed UMI table is provided in the <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/Biobase/inst/doc/ExpressionSetIntroduction.pdf" target="_blank">ExpressionSet</a> class format. We are also providing a separate processed UMI table for the T Cells.</p>
-<p><a href="https://vitiligo.dolphinnext.com/data/phs002455.v1.p1_UMITable.Rdata" target="_blank">Raw UMI Table</a></p>
-<p><a href="https://vitiligo.dolphinnext.com/data/phs002455_processed_UMItable.Rdata" target="_blank">Processed UMI Table</a></p>
-<p><a href="https://vitiligo.dolphinnext.com/data/phs002455_TCells_processed_UMItable.Rdata" target="_blank">Processed UMI Table of T-cells</a></p>
-<p><img width="70%" height="70%" src="images/networkanalysis.png" class="center"></p>
+<div id="scatac-seq-graybuck-et.-al-2021" class="section level5">
+<h5><strong>scATAC-Seq (Graybuck et. al 2021):</strong></h5>
+<p>This study includes chromatin accessibility profiles of 3602 mouse cortex single cells (<a href="https://www.sciencedirect.com/science/article/pii/S0896627321001598?via%3Dihub">Graybuck et. al 2021</a>) that are primarily collected from primary visual cortex (<strong>VISp</strong>) of 60 mice donors whose ages are ranging between 38 and 81 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq.</p>
+<p>The paired sequencing reads of each individual cell are processed using the <strong>scATAC-Seq (Graybuck et al 2021)</strong> pipeline that aligns and quantifies reads as previously described by (<a href="https://www.sciencedirect.com/science/article/pii/S0896627321001598?via%3Dihub">Graybuck et. al 2021</a>).</p>
+</div>
+<div id="cage-seq-fantom5" class="section level5">
+<h5><strong>CAGE-Seq (FANTOM5):</strong></h5>
+<p>FANTOM5 project incorporates CAGE sequencing reads from 1016 mouse samples. We have primarily aligned CAGE-Seq reads of <strong>primary cells</strong> (neuronal, astrocyte, microglia etc.) and <strong>whole tissue</strong> (cerebellum, visual cortex, hippocampus etc.) of mouse brain using a custom <strong>CAGE-Seq </strong> pipeline.</p>
 </div>
 
 
