@@ -9,13 +9,13 @@ navbar:
       href: index.html
     - text: "UCSC Track Hub"
       icon: fa-dna
-      href: ucscbrowse.html
-    - text: "Cellxgene Browser"
-      icon: fa-project-diagram 
-      href: cellxgenebrowse.html
+      href: ucscbrowser.html
     - text: "DolphinSuite"
       icon: fa-laptop
       href: dolphinsuite.html
+    - text: "Cellxgene Browser"
+      icon: fa-project-diagram 
+      href: cellxgenebrowser.html
   right:
     - text: "Contact"
       icon: fa-envelope-o

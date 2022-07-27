@@ -35,7 +35,7 @@ DolphinSuite is comprised of three major components that supports distinct aspec
       <p> **Dmeta**: automated data processing and management using ontology-based metadata tracking system </p>
    </td>
    <td style="text-align:center; width:33%; vertical-align: text-top;"> 
-      <p> <a href="dportal.dolphinnext.com" target="_blank" style="font-size: 1.5em;">DolphinPortal (Dportal)</a> </p>
+      <p> <a href="https://dportal.dolphinnext.com" target="_blank" style="font-size: 1.5em;">DolphinPortal (Dportal)</a> </p>
       <img width="300" height="200" src="./images/dportal.png" class="center">
       <br>
       <p> **Dportal**: a user-friendly and interactive data browser for filtering and querying</p>
@@ -55,12 +55,12 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
 <tbody>
   <tr>
    <td style="text-align:center;width:40%; vertical-align: text-top;"> 
-      <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=12" target="_blank" style="font-size: 1.2em;">scRNA-Seq (Tasic et. al 2021) Pipeline</a> </p>
-      <img width="300" height="200" src="./images/scRNA-Seq pipeline.png" class="center">
+      <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=12" target="_blank" style="font-size: 1.2em;">scRNA-Seq (Tasic et. al 2018) Pipeline</a> </p>
+      <img width="400" height="240" src="./images/scRNA-Seq pipeline.png" class="center">
       <br>
    </td>
    <td style="width:60%; vertical-align: text-top; padding: 10px"> 
-      <p> The <strong>scRNA-Seq (Tasic et. al 2021) pipeline</strong> includes Quality Control, rRNA filtering, Genome Alignment using STAR and estimates gene expression levels by GenomeAlignment Package in R. </p>
+      <p> The <strong>scRNA-Seq (Tasic et. al 2018) pipeline</strong> includes Quality Control, rRNA filtering, Genome Alignment using STAR and estimates gene expression levels by GenomeAlignment Package in R. </p>
       <p> <strong>Steps</strong>: </p>
       <ol>
          <li>For Quality Control, we use FastQC to create qc outputs. There are optional read quality filtering (trimmomatic), read quality trimming (trimmomatic), adapter removal (cutadapt) processes available.</li>
@@ -75,7 +75,7 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
   <tr>
    <td style="text-align:center;width:40%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=18" target="_blank" style="font-size: 1.2em;">scATAC-Seq (Graybuck et. al 2021) Pipeline</a> </p>
-      <img width="300" height="200" src="./images/scATAC-Seq pipeline.png" class="center">
+      <img width="400" height="180" src="./images/scATAC-Seq pipeline.png" class="center">
       <br>
    </td>
    <td style="width:60%; vertical-align: text-top; padding: 10px"> 
@@ -93,7 +93,7 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
   <tr>
    <td style="text-align:center;width:40%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=21" target="_blank" style="font-size: 1.2em;">CAGE-Seq Pipeline</a> </p>
-      <img width="300" height="200" src="./images/CAGE-Seq pipeline.png" class="center">
+      <img width="400" height="160" src="./images/CAGE-Seq pipeline.png" class="center">
       <br>
    </td>
    <td style="width:60%; vertical-align: text-top; padding: 10px"> 
@@ -116,7 +116,7 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
 ## Downstream Analysis Pipelines
 
 DolphinNext can also be used to design downstream analysis pipelines that may incorporate processed sequencing datasets to further investigate 
-cell types of interests and build necessary files for online applications such as [Cellxgene](./cellxgenebrowse.html) and [UCSC Track Hub](./cellxgenebrowse.html). 
+cell types of interests and build necessary files for online applications such as [Cellxgene](./cellxgenebrowser.html) and [UCSC Track Hub](./ucscbrowser.html). 
 
 All **Aggregate Analysis** pipelines incorporate a few number of common processes as well as steps geared towards each individual sequencing technology or dataset. 
 
@@ -130,7 +130,7 @@ All **Aggregate Analysis** pipelines incorporate a few number of common processe
    <li>Making h5ad files for visualization in Cellxgene (only for scRNA-Seq pipeline)</li>
 </ol>
 
-We have designed an additional downstream analysis pipeline (see <strong>Integrate-MultiOmics-Tracks</strong>) to build a large custom UCSC Track Hub of combined scRNA-Seq, scATAC-Seq and CAGE-Seq analysis. The resulting track hub can be accessed from [here](./cellxgenebrowse.html). 
+We have designed an additional downstream analysis pipeline (see <strong>Integrate-MultiOmics-Tracks</strong>) to build a large custom UCSC Track Hub of combined scRNA-Seq, scATAC-Seq and CAGE-Seq analysis. The resulting UCSC track hub can be accessed from [here](./ucscbrowser.html). 
 
 <br>
 <table>
@@ -138,21 +138,21 @@ We have designed an additional downstream analysis pipeline (see <strong>Integra
   <tr>
     <td style="text-align:center;width:33%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=20" target="_blank" style="font-size: 1.2em;">Aggregate Analysis (Tasic 2018)</a> </p>
-      <img width="300" height="200" src="./images/aggregate Tasic.png" class="center">
+      <img width="300" height="180" src="./images/aggregate Tasic.png" class="center">
    </td>
    <td style="text-align:center; width:33%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=19" target="_blank" style="font-size: 1.2em;">Aggregate Analysis (Graybuck 2021)</a> </p>
-      <img width="300" height="200" src="./images/aggregate Graybuck.png" class="center">
+      <img width="300" height="180" src="./images/aggregate Graybuck.png" class="center">
    </td>
    <td style="text-align:center;width:33%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=22" target="_blank" style="font-size: 1.2em;">Cage-Seq Aggregate Analysis</a> </p>
-      <img width="300" height="200" src="./images/aggregate CAGE-Seq.png" class="center">
+      <img width="300" height="130" src="./images/aggregate CAGE-Seq.png" class="center">
    </td>
   </tr>
   <tr>
    <td style="text-align:center;width:33%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=23" target="_blank" style="font-size: 1.2em;">Integrate-MultiOmics-Tracks</a> </p>
-      <img width="300" height="300" src="./images/multi-omics pipeline.png" class="center">
+      <img width="300" height="280" src="./images/multi-omics pipeline.png" class="center">
       <br>
    </td>
    <td colspan=2 style="width:66%; vertical-align: text-top; padding: 10px"> 

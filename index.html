@@ -257,17 +257,10 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="ucscbrowse.html">
+  <a href="ucscbrowser.html">
     <span class="fa fa-dna"></span>
      
     UCSC Track Hub
-  </a>
-</li>
-<li>
-  <a href="cellxgenebrowse.html">
-    <span class="fa fa-project-diagram"></span>
-     
-    Cellxgene Browser
   </a>
 </li>
 <li>
@@ -275,6 +268,13 @@ $(document).ready(function () {
     <span class="fa fa-laptop"></span>
      
     DolphinSuite
+  </a>
+</li>
+<li>
+  <a href="cellxgenebrowser.html">
+    <span class="fa fa-project-diagram"></span>
+     
+    Cellxgene Browser
   </a>
 </li>
       </ul>
@@ -345,14 +345,14 @@ text-align: justify}
 <p><br /></p>
 <p>We provide access to processed and analyzed data of mouse single cell, primary cell and whole tissue originating from large studies (<strong>scRNA-Seq</strong> and <strong>scATAC-Seq</strong>) conducted in <strong>Allen Institute for Brain Science</strong> as well as additional projects such as <strong>FANTOM5</strong> for <strong>CAGE-Seq</strong>. This project has been conducted in collaboration with <a href="https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/">Sena-Esteves Lab</a> and <a href="https://www.umassmed.edu/biocore/">Bioinformatics Core</a> at UMass Chan Medical School.</p>
 <p>In collaboration with <a href="https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/">Sena-Esteves Lab</a> and <a href="https://www.umassmed.edu/biocore/">Bioinformatics Core</a> at UMass Chan Medical School, this website hosts two publicly accessible browsers for interactively visualizing genomic tracks and profiles of mouse brain cells.</p>
-<p><strong>UCSC Track Hub:</strong> The scRNA-Seq, scATAC-Seq and CAGE-Seq reads are individually aligned using predefined pre-processing pipelines. Aligned reads are aggregated for cell types, tissues and regions of interests before transformed into BigWig files. To provide access to these aggregate single cell tracks we are hosting a custom <a href="./cellxgenebrowse.html">UCSC Track Hub</a>.</p>
-<p><strong>Cellxgene Browser:</strong> The scRNA data on mouse neocortex is analyzed using scRNA downstream analysis package called <a href="https://satijalab.org/seurat/">Seurat</a>. To provide access to the analyzed single cell data we are hosting an interactive browser based on <a href="./cellxgenebrowse.html">Cellxgene</a>.</p>
-<p>All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager <a href="./dolphinnext.html">DolphinNext</a> (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x">Yukselen et. al 2020</a>). Metadata as well as the processed datasets are currently being hosted in <a href="./dolphinnext.html">DolphinSuite</a>, an end-to-end bioinformatics analysis platform.</p>
+<p><strong>UCSC Track Hub:</strong> The scRNA-Seq, scATAC-Seq and CAGE-Seq reads are individually aligned using predefined pre-processing pipelines. Aligned reads are aggregated for cell types, tissues and regions of interests before transformed into BigWig files. To provide access to these aggregate single cell tracks we are hosting a custom <a href="./ucscbrowser.html">UCSC Track Hub</a>.</p>
+<p><strong>Cellxgene Browser:</strong> The scRNA data on mouse neocortex is analyzed using scRNA downstream analysis package called <a href="https://satijalab.org/seurat/">Seurat</a>. To provide access to the analyzed single cell data we are hosting an interactive browser based on <a href="./cellxgenebrowser.html">Cellxgene</a>.</p>
+<p>All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager <a href="./dolphinsuite.html">DolphinNext</a> (<a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x">Yukselen et. al 2020</a>). Metadata as well as the processed datasets are currently being hosted in <a href="./dolphinsuite.html">DolphinSuite</a>, an end-to-end bioinformatics analysis platform.</p>
 <p><img width="100%" height="100%" src="images/index.png" class="center"></p>
-<div id="scrna-seq-tasic-et.-al-2021" class="section level5">
-<h5><strong>scRNA-Seq (Tasic et. al 2021):</strong></h5>
-<p>This study includes gene expression profiles of 3602 mouse neocortex single cells (<a href="https://www.nature.com/articles/s41586-018-0654-5">Tasic et. al 2021</a>) that are collected from either anterior lateral motor cortex (<strong>ALM</strong>) or primary visual cortex (<strong>VISp</strong>) of 360 mice donors whose ages are ranging between 51 and 91 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq.</p>
-<p>The paired sequencing reads of each individual cell are processed using the <strong>scRNA-Seq (Tasic et al 2021)</strong> pipeline that aligns and quantifies reads as previously described by (<a href="https://www.nature.com/articles/s41586-018-0654-5">Tasic et. al 2021</a>).</p>
+<div id="scrna-seq-tasic-et.-al-2018" class="section level5">
+<h5><strong>scRNA-Seq (Tasic et. al 2018):</strong></h5>
+<p>This study includes gene expression profiles of 3602 mouse neocortex single cells (<a href="https://www.nature.com/articles/s41586-018-0654-5">Tasic et. al 2018</a>) that are collected from either anterior lateral motor cortex (<strong>ALM</strong>) or primary visual cortex (<strong>VISp</strong>) of 360 mice donors whose ages are ranging between 51 and 91 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq.</p>
+<p>The paired sequencing reads of each individual cell are processed using the <strong>scRNA-Seq (Tasic et al 2018)</strong> pipeline that aligns and quantifies reads as previously described by (<a href="https://www.nature.com/articles/s41586-018-0654-5">Tasic et. al 2018</a>).</p>
 </div>
 <div id="scatac-seq-graybuck-et.-al-2021" class="section level5">
 <h5><strong>scATAC-Seq (Graybuck et. al 2021):</strong></h5>
@@ -361,7 +361,7 @@ text-align: justify}
 </div>
 <div id="cage-seq-fantom5" class="section level5">
 <h5><strong>CAGE-Seq (FANTOM5):</strong></h5>
-<p>FANTOM5 project incorporates CAGE sequencing reads from 1016 mouse samples. We have primarily aligned CAGE-Seq reads of <strong>primary cells</strong> (neuronal, astrocyte, microglia etc.) and <strong>whole tissue</strong> (cerebellum, visual cortex, hippocampus etc.) of mouse brain using a custom <strong>CAGE-Seq </strong> pipeline.</p>
+<p><a href="https://fantom.gsc.riken.jp/5/">FANTOM5</a> project incorporates CAGE sequencing reads from 1016 mouse samples. We have primarily aligned CAGE-Seq reads of <strong>primary cells</strong> (neuronal, astrocyte, microglia etc.) and <strong>whole tissue</strong> (cerebellum, visual cortex, hippocampus etc.) reads of mouse brain using a custom <strong>CAGE-Seq </strong> pipeline.</p>
 </div>
 
 
