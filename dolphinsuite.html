@@ -255,17 +255,10 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="ucscbrowse.html">
+  <a href="ucscbrowser.html">
     <span class="fa fa-dna"></span>
      
     UCSC Track Hub
-  </a>
-</li>
-<li>
-  <a href="cellxgenebrowse.html">
-    <span class="fa fa-project-diagram"></span>
-     
-    Cellxgene Browser
   </a>
 </li>
 <li>
@@ -273,6 +266,13 @@ $(document).ready(function () {
     <span class="fa fa-laptop"></span>
      
     DolphinSuite
+  </a>
+</li>
+<li>
+  <a href="cellxgenebrowser.html">
+    <span class="fa fa-project-diagram"></span>
+     
+    Cellxgene Browser
   </a>
 </li>
       </ul>
@@ -367,7 +367,7 @@ text-align: justify}
 </td>
 <td style="text-align:center; width:33%; vertical-align: text-top;">
 <p>
-<a href="dportal.dolphinnext.com" target="_blank" style="font-size: 1.5em;">DolphinPortal (Dportal)</a>
+<a href="https://dportal.dolphinnext.com" target="_blank" style="font-size: 1.5em;">DolphinPortal (Dportal)</a>
 </p>
 <img width="300" height="200" src="images/dportal.png" class="center"> <br>
 <p>
@@ -387,13 +387,13 @@ text-align: justify}
 <tr>
 <td style="text-align:center;width:40%; vertical-align: text-top;">
 <p>
-<a href="https://dnext.dolphinnext.com/index.php?np=1&id=12" target="_blank" style="font-size: 1.2em;">scRNA-Seq (Tasic et. al 2021) Pipeline</a>
+<a href="https://dnext.dolphinnext.com/index.php?np=1&id=12" target="_blank" style="font-size: 1.2em;">scRNA-Seq (Tasic et. al 2018) Pipeline</a>
 </p>
-<img width="300" height="200" src="images/scRNA-Seq%20pipeline.png" class="center"> <br>
+<img width="400" height="240" src="images/scRNA-Seq%20pipeline.png" class="center"> <br>
 </td>
 <td style="width:60%; vertical-align: text-top; padding: 10px">
 <p>
-The <strong>scRNA-Seq (Tasic et. al 2021) pipeline</strong> includes Quality Control, rRNA filtering, Genome Alignment using STAR and estimates gene expression levels by GenomeAlignment Package in R.
+The <strong>scRNA-Seq (Tasic et. al 2018) pipeline</strong> includes Quality Control, rRNA filtering, Genome Alignment using STAR and estimates gene expression levels by GenomeAlignment Package in R.
 </p>
 <p>
 <strong>Steps</strong>:
@@ -426,7 +426,7 @@ SummarizeOverlaps is used to calculate gene counts.
 <p>
 <a href="https://dnext.dolphinnext.com/index.php?np=1&id=18" target="_blank" style="font-size: 1.2em;">scATAC-Seq (Graybuck et. al 2021) Pipeline</a>
 </p>
-<img width="300" height="200" src="images/scATAC-Seq%20pipeline.png" class="center"> <br>
+<img width="400" height="180" src="images/scATAC-Seq%20pipeline.png" class="center"> <br>
 </td>
 <td style="width:60%; vertical-align: text-top; padding: 10px">
 <p>
@@ -460,7 +460,7 @@ Duplicates reads are deleted using Samtools.
 <p>
 <a href="https://dnext.dolphinnext.com/index.php?np=1&id=21" target="_blank" style="font-size: 1.2em;">CAGE-Seq Pipeline</a>
 </p>
-<img width="300" height="200" src="images/CAGE-Seq%20pipeline.png" class="center"> <br>
+<img width="400" height="160" src="images/CAGE-Seq%20pipeline.png" class="center"> <br>
 </td>
 <td style="width:60%; vertical-align: text-top; padding: 10px">
 <p>
@@ -495,7 +495,7 @@ MACS2 is used for calling peaks in aligned bam files.
 </div>
 <div id="downstream-analysis-pipelines" class="section level2">
 <h2>Downstream Analysis Pipelines</h2>
-<p>DolphinNext can also be used to design downstream analysis pipelines that may incorporate processed sequencing datasets to further investigate cell types of interests and build necessary files for online applications such as <a href="./cellxgenebrowse.html">Cellxgene</a> and <a href="./cellxgenebrowse.html">UCSC Track Hub</a>.</p>
+<p>DolphinNext can also be used to design downstream analysis pipelines that may incorporate processed sequencing datasets to further investigate cell types of interests and build necessary files for online applications such as <a href="./cellxgenebrowser.html">Cellxgene</a> and <a href="./ucscbrowser.html">UCSC Track Hub</a>.</p>
 <p>All <strong>Aggregate Analysis</strong> pipelines incorporate a few number of common processes as well as steps geared towards each individual sequencing technology or dataset.</p>
 <p>
 <strong>Steps</strong>:
@@ -520,7 +520,7 @@ Single cell RNA downstream analysis using Seurat (only for scRNA-Seq pipeline)
 Making h5ad files for visualization in Cellxgene (only for scRNA-Seq pipeline)
 </li>
 </ol>
-<p>We have designed an additional downstream analysis pipeline (see <strong>Integrate-MultiOmics-Tracks</strong>) to build a large custom UCSC Track Hub of combined scRNA-Seq, scATAC-Seq and CAGE-Seq analysis. The resulting track hub can be accessed from <a href="./cellxgenebrowse.html">here</a>.</p>
+<p>We have designed an additional downstream analysis pipeline (see <strong>Integrate-MultiOmics-Tracks</strong>) to build a large custom UCSC Track Hub of combined scRNA-Seq, scATAC-Seq and CAGE-Seq analysis. The resulting UCSC track hub can be accessed from <a href="./ucscbrowser.html">here</a>.</p>
 <br>
 <table>
 <tbody>
@@ -529,19 +529,19 @@ Making h5ad files for visualization in Cellxgene (only for scRNA-Seq pipeline)
 <p>
 <a href="https://dnext.dolphinnext.com/index.php?np=1&id=20" target="_blank" style="font-size: 1.2em;">Aggregate Analysis (Tasic 2018)</a>
 </p>
-<img width="300" height="200" src="images/aggregate%20Tasic.png" class="center">
+<img width="300" height="180" src="images/aggregate%20Tasic.png" class="center">
 </td>
 <td style="text-align:center; width:33%; vertical-align: text-top;">
 <p>
 <a href="https://dnext.dolphinnext.com/index.php?np=1&id=19" target="_blank" style="font-size: 1.2em;">Aggregate Analysis (Graybuck 2021)</a>
 </p>
-<img width="300" height="200" src="images/aggregate%20Graybuck.png" class="center">
+<img width="300" height="180" src="images/aggregate%20Graybuck.png" class="center">
 </td>
 <td style="text-align:center;width:33%; vertical-align: text-top;">
 <p>
 <a href="https://dnext.dolphinnext.com/index.php?np=1&id=22" target="_blank" style="font-size: 1.2em;">Cage-Seq Aggregate Analysis</a>
 </p>
-<img width="300" height="200" src="images/aggregate%20CAGE-Seq.png" class="center">
+<img width="300" height="130" src="images/aggregate%20CAGE-Seq.png" class="center">
 </td>
 </tr>
 <tr>
@@ -549,7 +549,7 @@ Making h5ad files for visualization in Cellxgene (only for scRNA-Seq pipeline)
 <p>
 <a href="https://dnext.dolphinnext.com/index.php?np=1&id=23" target="_blank" style="font-size: 1.2em;">Integrate-MultiOmics-Tracks</a>
 </p>
-<img width="300" height="300" src="images/multi-omics%20pipeline.png" class="center"> <br>
+<img width="300" height="280" src="images/multi-omics%20pipeline.png" class="center"> <br>
 </td>
 <td colspan="2" style="width:66%; vertical-align: text-top; padding: 10px">
 <p>
