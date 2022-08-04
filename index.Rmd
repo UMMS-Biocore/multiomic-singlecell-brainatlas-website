@@ -31,13 +31,13 @@ All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by p
 
 ##### **scRNA-Seq (Tasic et. al 2018):**
 
-This study includes gene expression profiles of 3602 mouse neocortex single cells ([Tasic et. al 2018](https://www.nature.com/articles/s41586-018-0654-5)) that are collected from either anterior lateral motor cortex	(**ALM**) or primary visual cortex (**VISp**) of 360 mice donors whose ages are ranging between 51 and 91 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq. 
+This study includes gene expression profiles of 23573 mouse neocortex single cells ([Tasic et. al 2018](https://www.nature.com/articles/s41586-018-0654-5)) that are collected from either anterior lateral motor cortex	(**ALM**) or primary visual cortex (**VISp**) of 360 mice donors whose ages are ranging between 51 and 91 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq. 
 
 The paired sequencing reads of each individual cell are processed using the **scRNA-Seq (Tasic et al 2018)** pipeline that aligns and quantifies reads as previously described by ([Tasic et. al 2018](https://www.nature.com/articles/s41586-018-0654-5)). 
 
 ##### **scATAC-Seq (Graybuck et. al 2021):**
 
-This study includes chromatin accessibility profiles of 3602 mouse cortex single cells ([Graybuck et. al 2021](https://www.sciencedirect.com/science/article/pii/S0896627321001598?via%3Dihub)) that are primarily collected from primary visual cortex (**VISp**) of 60 mice donors whose ages are ranging between 38 and 81 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking. The cDNA libraries are generated and amplified using SMART-Seq. 
+This study includes chromatin accessibility profiles of 3602 mouse cortex single cells ([Graybuck et. al 2021](https://www.sciencedirect.com/science/article/pii/S0896627321001598?via%3Dihub)) that are primarily collected from primary visual cortex (**VISp**) of 60 mice donors whose ages are ranging between 38 and 81 days. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking.
 
 The paired sequencing reads of each individual cell are processed using the **scATAC-Seq (Graybuck et al 2021)** pipeline that aligns and quantifies reads as previously described by ([Graybuck et. al 2021](https://www.sciencedirect.com/science/article/pii/S0896627321001598?via%3Dihub)). 
 

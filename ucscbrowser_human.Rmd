@@ -16,7 +16,7 @@ text-align: justify}
 }
 </style>
 
-<!-- ## UCSC Browser {.tabset .tabset-fade} -->
+## UCSC Browser
 
 <!-- Select a **gene/feature** from the **Count Data** table and then copy paste to **Genome Browser**.  -->
 
@@ -51,7 +51,7 @@ text-align: justify}
 <!-- ### Genome Browser -->
 
 <div align="center">
-  <iframe width='1850px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'>
+  <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'>
     <p>Your browser does not support iframes</p>
   </iframe>
 </div>
