@@ -1,0 +1,72 @@
+---
+title: ''
+---
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body {
+text-align: justify}
+.main-container {
+  max-width: 1850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<!-- ## UCSC Browser {.tabset .tabset-fade} -->
+
+<!-- Select a **gene/feature** from the **Count Data** table and then copy paste to **Genome Browser**.  -->
+
+<!-- You can use the **Cluster** field to search for genes that are markers of Cell Types. -->
+
+<!-- ### Count Data -->
+
+<!-- ```{r echo=FALSE, include=FALSE} -->
+<!-- knitr::opts_chunk$set(warning = FALSE, message = FALSE)  -->
+<!-- library(DT) -->
+<!-- library(knitr) -->
+<!-- datax_rna <- read.table("files/rna_feature_metadata_mouse.tsv", header = T, sep = "\t", row.names = NULL) -->
+<!-- datax_atac <- read.table("files/atac_feature_metadata_mouse.tsv", header = T, sep = "\t", row.names = NULL) -->
+<!-- datax_cage <- read.table("files/cage_feature_metadata_mouse.tsv", header = T, sep = "\t", row.names = NULL) -->
+<!-- ``` -->
+
+<!-- #### **RNA-Seq** -->
+
+<!-- <div align="center"> -->
+<!-- ``` {r fig1, echo = FALSE, include=TRUE} -->
+<!-- DT::datatable(datax_rna, class = 'display responsive nowrap', filter = 'top', options = list(scrollX = TRUE), rownames = FALSE) -->
+<!-- ``` -->
+<!-- </div> -->
+
+<!-- #### **ATAC-Seq** -->
+
+<!-- <div align="center"> -->
+<!-- ``` {r fig2, echo = FALSE, include=TRUE} -->
+<!-- DT::datatable(datax_atac, class = 'display responsive nowrap', filter = 'top', options = list(scrollX = TRUE), rownames = FALSE) -->
+<!-- ``` -->
+<!-- </div> -->
+
+<!-- #### **CAGE-Seq** -->
+
+<!-- <div align="center"> -->
+<!-- ``` {r fig3, echo = FALSE, include=TRUE} -->
+<!-- DT::datatable(datax_cage, class = 'display responsive nowrap', filter = 'top', options = list(scrollX = TRUE), rownames = FALSE) -->
+<!-- ``` -->
+<!-- </div> -->
+
+<!-- ### Genome Browser -->
+
+<!-- <div align="center"> -->
+<!--   <iframe width='1850px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'> -->
+<!--     <p>Your browser does not support iframes</p> -->
+<!--   </iframe> -->
+<!-- </div> -->
+
+<div align="center">
+  <iframe width='1850px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'>
+    <p>Your browser does not support iframes</p>
+  </iframe>
+</div>

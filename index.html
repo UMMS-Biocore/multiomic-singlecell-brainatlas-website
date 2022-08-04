@@ -256,12 +256,19 @@ $(document).ready(function () {
     Home
   </a>
 </li>
-<li>
-  <a href="ucscbrowser.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-dna"></span>
      
     UCSC Track Hub
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="ucscbrowser_mouse.html">Mouse</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="dolphinsuite.html">
@@ -270,12 +277,19 @@ $(document).ready(function () {
     DolphinSuite
   </a>
 </li>
-<li>
-  <a href="cellxgenebrowser.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-project-diagram"></span>
      
     Cellxgene Browser
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="cellxgenebrowser.html">Mouse</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
