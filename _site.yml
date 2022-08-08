@@ -12,8 +12,8 @@ navbar:
       menu:
       - text: "Mouse"
         href: ucscbrowser_mouse.html
-      # - text: "Human"
-      #   href: ucscbrowser_human.html
+      - text: "Human"
+        href: ucscbrowser_human.html
     - text: "DolphinSuite"
       icon: fa-laptop
       href: dolphinsuite.html

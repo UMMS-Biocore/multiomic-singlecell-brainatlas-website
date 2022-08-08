@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Human NeoCortex Track Hub for UCSC Genome Browser'
 ---
 
 <style>
@@ -14,9 +14,11 @@ text-align: justify}
   margin-left: auto;
   margin-right: auto;
 }
+h1, h2, h3 {
+   text-align: center;
+}
 </style>
 
-## UCSC Browser
 
 <!-- Select a **gene/feature** from the **Count Data** table and then copy paste to **Genome Browser**.  -->
 
@@ -50,8 +52,16 @@ text-align: justify}
 
 <!-- ### Genome Browser -->
 
-<div align="center">
-  <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'>
-    <p>Your browser does not support iframes</p>
-  </iframe>
-</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This track hub was built by aggregated **scRNA-Seq**, **scATAC-Seq** and **CAGE-Seq** reads of the human neocortex. You can query for positions, isoforms and genes to browse sequencing reads and ATAC-Seq and CAGE-Seq peaks. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In order to download nucleotide sequences, simply go to **View** -> **DNA** ->  **get DNA**. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See the [DolphinNext](https://dnext.dolphinnext.com/index.php?np=3&id=265) run for querying genes of interests on an aggregated gene expression and peaks data table, integrated to this UCSC Track Hub. Click to **Report** -> **UCSC Genome Browser**. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Under development!
+
+<!-- <div align="center"> -->
+<!--   <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'> -->
+<!--     <p>Your browser does not support iframes</p> -->
+<!--   </iframe> -->
+<!-- </div> -->
