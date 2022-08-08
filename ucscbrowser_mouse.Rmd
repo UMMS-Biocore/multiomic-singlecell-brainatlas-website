@@ -62,7 +62,9 @@ h1, h2, h3 {
 <!--   </iframe> -->
 <!-- </div> -->
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This track hub was built by aggregated scRNA-Seq, scATAC-Seq and CAGE-Seq reads of the mouse neocortex. You can query for positions, isoforms and genes to browse sequencing reads and peaks. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This track hub was built by aggregated **scRNA-Seq**, **scATAC-Seq** and **CAGE-Seq** reads of the mouse neocortex. You can query for positions, isoforms and genes to browse sequencing reads and ATAC-Seq and CAGE-Seq peaks. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In order to download nucleotide sequences, simply go to **View** -> **DNA** ->  **get DNA**. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See the [DolphinNext](https://dnext.dolphinnext.com/index.php?np=3&id=265) run for querying genes of interests on an aggregated gene expression and peaks data table, integrated to this UCSC Track Hub. Click to **Report** -> **UCSC Genome Browser**. 
 
