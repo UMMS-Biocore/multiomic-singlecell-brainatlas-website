@@ -32,7 +32,11 @@ In collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/facu
 
 All raw sequencing data (scRNA-Seq, scATAC-Seq and CAGE-Seq) were processed by pipelines developed within the interactive pipeline manager [DolphinNext](./dolphinsuite.html) ([Yukselen et. al 2020](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6714-x)). Metadata as well as the processed datasets are currently being hosted in [DolphinSuite](./dolphinsuite.html), an end-to-end bioinformatics analysis platform.
 
+<br />
+
 <img width="100%" height="100%" src="images/index_human.png" class="center">
+
+<br />
 
 ##### **scRNA-Seq (Tasic et. al 2018):**
 
@@ -40,9 +44,9 @@ This study includes gene expression profiles of 23573 mouse neocortex single cel
 
 The paired sequencing reads of each individual cell are processed using the **scRNA-Seq (Tasic et al 2018)** pipeline that aligns and quantifies reads as previously described by ([Tasic et. al 2018](https://www.nature.com/articles/s41586-018-0654-5)). 
 
-##### **scATAC-Seq (Mıch et. al 2021):**
+##### **scATAC-Seq (Mich et. al 2021):**
 
-This study includes gene expression profiles of 3660 human temportal cortex single cells ([Tasic et. al 2018](https://www.nature.com/articles/s41586-018-0654-5)) that are collected primarily from the temportal cortex (mostly from middle temporal gyrus) of 14 human donors whose ages are ranging between 19 and 68. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking.
+This study includes gene expression profiles of 3660 human temportal cortex single cells ([(Mich et. al 2021](https://linkinghub.elsevier.com/retrieve/pii/S2211-1247(21)00067-X)) that are collected primarily from the temportal cortex (mostly from middle temporal gyrus) of 14 human donors whose ages are ranging between 19 and 68. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking.
 
 The paired sequencing reads of each individual cell are processed using the **scATAc-Seq (Mich et al 2021)** pipeline that aligns and quantifies reads as previously described by ([Mich et. al 2021](https://linkinghub.elsevier.com/retrieve/pii/S2211-1247(21)00067-X)). 
 

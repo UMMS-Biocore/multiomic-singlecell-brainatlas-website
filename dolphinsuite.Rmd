@@ -175,14 +175,14 @@ We have designed an additional downstream analysis pipeline (see <strong>Integra
    </td>
    <td colspan=2 style="width:66%; vertical-align: text-top; padding: 10px"> 
       <p> The <strong>Integrate-MultiOmics-Tracks</strong> pipeline generates a custom <strong>USCS Track Hub</strong> and auxiliary tables for interrogating RNA, ATAC and CAGE seq reads from following studies: </p>
-      <ol>
-         <li>ATAC-seq (Graybuck et. al 2021): Enhancer viruses for combinatorial cell-subclass- specific labeling.</li>
-         <li>RNA-seq (Tasic et. al 2018): Shared and distinct transcriptomic cell types across neocortical areas.</li>
-         <li>CAGE-seq: FANTOM5 CAGE profiles of human and mouse samples.</li>
-      </ol>
+      <!-- <ol> -->
+      <!--    <li>ATAC-seq (Graybuck et. al 2021): Enhancer viruses for combinatorial cell-subclass- specific labeling.</li> -->
+      <!--    <li>RNA-seq (Tasic et. al 2018): Shared and distinct transcriptomic cell types across neocortical areas.</li> -->
+      <!--    <li>CAGE-seq: FANTOM5 CAGE profiles of human and mouse samples.</li> -->
+      <!-- </ol> -->
       <p> <strong>Steps</strong>: </p>
       <ol>
-         <li>Collect bigWig files from DolphinNext runs.</li>
+         <li>Collect bigWig files from multiple DolphinNext runs.</li>
          <li>Build a custom UCSC track hub for all tracks of scRNA-Seq, scATAC-Seq and CAGE-Seq reads</li>
          <li>Aggregate counts from scRNA-seq data for each cell type.</li>
       </ol>

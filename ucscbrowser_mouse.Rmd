@@ -68,7 +68,7 @@ h1, h2, h3 {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See the [DolphinNext](https://dnext.dolphinnext.com/index.php?np=3&id=265) run for querying genes of interests on an aggregated gene expression and peaks data table, integrated to this UCSC Track Hub. Click to **Report** -> **UCSC Genome Browser**. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please waıt until the UCSC Genome Browser is fully loaded!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please wait until the UCSC Genome Browser is fully loaded!
 
 <div align="center">
   <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A15393391%2D15410982&hgsid=1402705023_aKIR7wgaDGxjpAodVTAk7KXf1wpp'>
