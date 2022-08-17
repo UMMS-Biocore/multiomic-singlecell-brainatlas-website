@@ -24,7 +24,7 @@ text-align: justify}
 
 We provide access to processed and analyzed data of mouse single cell (**scRNA-Seq** and **scATAC-Seq**) from large studies conducted in **Allen Institute for Brain Science** as well as samples from additional projects such as **FANTOM5** for **CAGE-Seq**. This integrative project has been conducted in collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/) and [Bioinformatics Core](https://www.umassmed.edu/biocore/) at UMass Chan Medical School. 
 
-In collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/) and [Bioinformatics Core](https://www.umassmed.edu/biocore/) at UMass Chan Medical School, this website hosts two publicly accessible browsers for interactively visualizing genomic tracks and profiles of mouse brain cells.   
+In collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/) and [Bioinformatics Core](https://www.umassmed.edu/biocore/) at UMass Chan Medical School, this website hosts a browser for interactively visualizing transcriptional profiles of mouse brain cell types, and two publicly accessible custom track hubs (for human and mouse) within UCSC genome browsers. 
 
 **UCSC Track Hub:** The scRNA-Seq, scATAC-Seq and CAGE-Seq reads are individually aligned using predefined pre-processing pipelines. Aligned reads are aggregated for cell types, tissues and regions of interests before transformed into BigWig files. To provide access to these aggregate single cell tracks we are hosting a custom UCSC Track Hub ([Mouse](./ucscbrowser_mouse.html) and [Human](./ucscbrowser_human.html)).
 
