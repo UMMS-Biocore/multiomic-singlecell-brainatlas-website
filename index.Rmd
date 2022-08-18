@@ -22,7 +22,7 @@ text-align: justify}
 
 <br />
 
-We provide access to processed and analyzed data of mouse single cell (**scRNA-Seq** and **scATAC-Seq**) from large studies conducted in **Allen Institute for Brain Science** as well as samples from additional projects such as **FANTOM5** for **CAGE-Seq**. This integrative project has been conducted in collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/) and [Bioinformatics Core](https://www.umassmed.edu/biocore/) at UMass Chan Medical School. 
+We provide access to processed and analyzed data of human and mouse single cell (**scRNA-Seq** and **scATAC-Seq**) from large studies conducted in **Allen Institute for Brain Science** as well as samples from additional projects such as **FANTOM5** for **CAGE-Seq**. This integrative project has been conducted in collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/) and [Bioinformatics Core](https://www.umassmed.edu/biocore/) at UMass Chan Medical School. 
 
 In collaboration with [Sena-Esteves Lab](https://www.umassmed.edu/gtc/about/faculty-publications/miguel-sena-esteves/) and [Bioinformatics Core](https://www.umassmed.edu/biocore/) at UMass Chan Medical School, this website hosts a browser for interactively visualizing transcriptional profiles of mouse brain cell types, and two publicly accessible custom track hubs (for human and mouse) within UCSC genome browsers. 
 
@@ -46,7 +46,7 @@ The paired sequencing reads of each individual cell are processed using the **sc
 
 ##### **scATAC-Seq (Mich et. al 2021):**
 
-This study includes gene expression profiles of 3660 human temportal cortex single cells ([(Mich et. al 2021](https://linkinghub.elsevier.com/retrieve/pii/S2211-1247(21)00067-X)) that are collected primarily from the temportal cortex (mostly from middle temporal gyrus) of 14 human donors whose ages are ranging between 19 and 68. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking.
+This study includes chromatin accessibility profiles of 3660 human temportal cortex single cells ([(Mich et. al 2021](https://linkinghub.elsevier.com/retrieve/pii/S2211-1247(21)00067-X)) that are collected primarily from the temporal cortex (mostly from middle temporal gyrus) of 14 human donors whose ages are ranging between 19 and 68. Cells are isolated into individual wells using fluorescence-activated cell sorting (FACS) or manual picking.
 
 The paired sequencing reads of each individual cell are processed using the **scATAc-Seq (Mich et al 2021)** pipeline that aligns and quantifies reads as previously described by ([Mich et. al 2021](https://linkinghub.elsevier.com/retrieve/pii/S2211-1247(21)00067-X)). 
 
