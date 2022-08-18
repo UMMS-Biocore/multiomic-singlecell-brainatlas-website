@@ -1,0 +1,67 @@
+---
+title: 'Human NeoCortex Track Hub for UCSC Genome Browser'
+---
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body {
+text-align: justify}
+.main-container {
+  max-width: 1850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2, h3 {
+   text-align: center;
+}
+</style>
+
+
+<!-- Select a **gene/feature** from the **Count Data** table and then copy paste to **Genome Browser**.  -->
+
+<!-- You can use the **Cluster** field to search for genes that are markers of Cell Types. -->
+
+<!-- ### Count Data -->
+
+<!-- ```{r echo=FALSE, include=FALSE} -->
+<!-- knitr::opts_chunk$set(warning = FALSE, message = FALSE)  -->
+<!-- library(DT) -->
+<!-- library(knitr) -->
+<!-- datax_atac <- read.table("files/atac_feature_metadata_human.tsv", header = T, sep = "\t", row.names = NULL) -->
+<!-- datax_cage <- read.table("files/cage_feature_metadata_human.tsv", header = T, sep = "\t", row.names = NULL) -->
+<!-- ``` -->
+
+<!-- #### **ATAC-Seq** -->
+
+<!-- <div align="center"> -->
+<!-- ``` {r fig1, echo = FALSE, include=TRUE} -->
+<!-- DT::datatable(datax_atac, class = 'display responsive nowrap', filter = 'top', options = list(scrollX = TRUE), rownames = FALSE) -->
+<!-- ``` -->
+<!-- </div> -->
+
+<!-- #### **CAGE-Seq** -->
+
+<!-- <div align="center"> -->
+<!-- ``` {r fig2, echo = FALSE, include=TRUE} -->
+<!-- DT::datatable(datax_cage, class = 'display responsive nowrap', filter = 'top', options = list(scrollX = TRUE), rownames = FALSE) -->
+<!-- ``` -->
+<!-- </div> -->
+
+<!-- ### Genome Browser -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This track hub was built by aggregated **scATAC-Seq** and **CAGE-Seq** reads of the human neocortex. You can query for positions, isoforms and genes to browse sequencing reads and ATAC-Seq and CAGE-Seq peaks. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In order to download nucleotide sequences, simply go to **View** -> **DNA** ->  **get DNA**. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See the [DolphinNext](https://dnext.dolphinnext.com/index.php?np=3&id=330) run for querying genes of interests on an aggregated gene expression and peaks data table, integrated to this UCSC Track Hub. Click to **Report** -> **UCSC Genome Browser**. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please wait until the UCSC Genome Browser is fully loaded!
+
+<div align="center">
+  <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chrX%3A15560138%2D15602945&hgsid=1428664653_DqWPnjnf01M0GOdYjECQjBR4SZ7D'>
+    <p>Your browser does not support iframes</p>
+  </iframe>
+</div>

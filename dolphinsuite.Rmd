@@ -79,17 +79,35 @@ DolphinNext is a revolutionary pipeline management system that allows users to <
       <br>
    </td>
    <td style="width:60%; vertical-align: text-top; padding: 10px"> 
-      <p> The <strong>scATAC-Seq (Graybuck et. al 2021) pipeline</strong> includes a set of tools necessary for pre-processing ATAC-Seq libraries prepared as in (Graybuck et. al 2019).</p>
+      <p> The <strong>scATAC-Seq (Graybuck et. al 2021) pipeline</strong> includes a set of tools necessary for pre-processing ATAC-Seq libraries prepared as in (Graybuck et. al 2021).</p>
       <p> <strong>Steps</strong>: </p>
       <ol>
          <li>Trim Galore tool is used to remove adapters from reads.</li>
          <li>Trimmed and untrimmed reads are aligned to the reference using Bowtie.</li>
          <li>Duplicates reads are deleted using Samtools.</li>
       </ol>
-      <p style="margin : 0; padding-top:0;">**Docker**: <a href="https://hub.docker.com/r/dolphinnext/graybuck2019_scatacseq_pipeline " target="_blank">https://hub.docker.com/r/dolphinnext/graybuck2019_scatacseq_pipeline </a></p>
-      <p>**GitHub**: <a href="https://github.com/dolphinnext/graybuck2019_scatacseq_pipeline " target="_blank">https://github.com/dolphinnext/graybuck2019_scatacseq_pipeline </a> </li></p>
+      <p style="margin : 0; padding-top:0;">**Docker**: <a href="https://hub.docker.com/r/dolphinnext/graybuck2021_scatacseq_pipeline " target="_blank">https://hub.docker.com/r/dolphinnext/graybuck2021_scatacseq_pipeline </a></p>
+      <p>**GitHub**: <a href="https://github.com/dolphinnext/graybuck2021_scatacseq_pipeline " target="_blank">https://github.com/dolphinnext/graybuck2021_scatacseq_pipeline </a> </li></p>
    </td>
   </tr>
+    <tr>
+   <td style="text-align:center;width:40%; vertical-align: text-top;"> 
+      <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=38" target="_blank" style="font-size: 1.2em;">scATAC-Seq (Mich et. al 2021) Pipeline</a> </p>
+      <img width="400" height="180" src="./images/mich pipeline.png" class="center">
+      <br>
+   </td>
+   <td style="width:60%; vertical-align: text-top; padding: 10px"> 
+      <p> The <strong>scATAC-Seq (Mich et. al 2021) pipeline</strong> includes a set of tools necessary for pre-processing ATAC-Seq libraries prepared as in (Mich et. al 2021).</p>
+      <p> <strong>Steps</strong>: </p>
+      <ol>
+         <li>Reads are aligned to the reference using Bowtie2.</li>
+         <li>Low quality, secondary and unmapped reads are deleted using Samtools.</li>
+      </ol>
+      <p style="margin : 0; padding-top:0;">**Docker**: <a href="https://hub.docker.com/r/dolphinnext/mich2021_scatacseq_pipeline " target="_blank">https://hub.docker.com/r/dolphinnext/mich2021_scatacseq_pipeline </a></p>
+      <p>**GitHub**: <a href="https://github.com/dolphinnext/mich2021_scatacseq_pipeline " target="_blank">https://github.com/dolphinnext/mich2021_scatacseq_pipeline </a> </li></p>
+   </td>
+  </tr>
+  
   <tr>
    <td style="text-align:center;width:40%; vertical-align: text-top;"> 
       <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=21" target="_blank" style="font-size: 1.2em;">CAGE-Seq Pipeline</a> </p>
@@ -130,7 +148,7 @@ All **Aggregate Analysis** pipelines incorporate a few number of common processe
    <li>Making h5ad files for visualization in Cellxgene (only for scRNA-Seq pipeline)</li>
 </ol>
 
-We have designed an additional downstream analysis pipeline (see <strong>Integrate-MultiOmics-Tracks</strong>) to build a large custom UCSC Track Hub of combined scRNA-Seq, scATAC-Seq and CAGE-Seq analysis. The resulting UCSC track hub can be accessed from [here](./ucscbrowser.html). 
+We have designed an additional downstream analysis pipeline (see <strong>Integrate-MultiOmics-Tracks</strong>) to build a large custom UCSC Track Hub of combined scRNA-Seq, scATAC-Seq and CAGE-Seq analysis. The resulting UCSC track hub can be accessed from here: [mouse](./ucscbrowser_mouse.html) and [human](./ucscbrowser_human.html). 
 
 <br>
 <table>
@@ -141,7 +159,7 @@ We have designed an additional downstream analysis pipeline (see <strong>Integra
       <img width="300" height="180" src="./images/aggregate Tasic.png" class="center">
    </td>
    <td style="text-align:center; width:33%; vertical-align: text-top;"> 
-      <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=19" target="_blank" style="font-size: 1.2em;">Aggregate Analysis (Graybuck 2021)</a> </p>
+      <p> <a href="https://dnext.dolphinnext.com/index.php?np=1&id=19" target="_blank" style="font-size: 1.2em;">scATAC-Seq Aggregate Analysis</a> </p>
       <img width="300" height="180" src="./images/aggregate Graybuck.png" class="center">
    </td>
    <td style="text-align:center;width:33%; vertical-align: text-top;"> 
@@ -157,14 +175,14 @@ We have designed an additional downstream analysis pipeline (see <strong>Integra
    </td>
    <td colspan=2 style="width:66%; vertical-align: text-top; padding: 10px"> 
       <p> The <strong>Integrate-MultiOmics-Tracks</strong> pipeline generates a custom <strong>USCS Track Hub</strong> and auxiliary tables for interrogating RNA, ATAC and CAGE seq reads from following studies: </p>
-      <ol>
-         <li>ATAC-seq (Graybuck et. al 2021): Enhancer viruses for combinatorial cell-subclass- specific labeling.</li>
-         <li>RNA-seq (Tasic et. al 2018): Shared and distinct transcriptomic cell types across neocortical areas.</li>
-         <li>CAGE-seq: FANTOM5 CAGE profiles of human and mouse samples.</li>
-      </ol>
+      <!-- <ol> -->
+      <!--    <li>ATAC-seq (Graybuck et. al 2021): Enhancer viruses for combinatorial cell-subclass- specific labeling.</li> -->
+      <!--    <li>RNA-seq (Tasic et. al 2018): Shared and distinct transcriptomic cell types across neocortical areas.</li> -->
+      <!--    <li>CAGE-seq: FANTOM5 CAGE profiles of human and mouse samples.</li> -->
+      <!-- </ol> -->
       <p> <strong>Steps</strong>: </p>
       <ol>
-         <li>Collect bigWig files from DolphinNext runs.</li>
+         <li>Collect bigWig files from multiple DolphinNext runs.</li>
          <li>Build a custom UCSC track hub for all tracks of scRNA-Seq, scATAC-Seq and CAGE-Seq reads</li>
          <li>Aggregate counts from scRNA-seq data for each cell type.</li>
       </ol>
