@@ -61,7 +61,7 @@ h1, h2, h3 {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please wait until the UCSC Genome Browser is fully loaded!
 
 <div align="center">
-  <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chrX%3A15560138%2D15602945&hgsid=1428664653_DqWPnjnf01M0GOdYjECQjBR4SZ7D'>
+  <iframe width='1650px' height='1000px' frameBorder='0' src='https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A32763856%2D32769639&hgsid=1537663415_EJ9iVP396eUrkO7TjpNYSzKTcnsb'>
     <p>Your browser does not support iframes</p>
   </iframe>
 </div>
